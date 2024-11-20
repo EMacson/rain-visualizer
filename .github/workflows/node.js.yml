@@ -30,7 +30,7 @@ jobs:
 
     # Deploy to GitHub Pages
     - name: Deploy to GitHub Pages
-      uses: emacson/actions-gh-pages@v3
+      uses: emacson/rain-visualizer
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_dir: ./build
