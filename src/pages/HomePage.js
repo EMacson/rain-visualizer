@@ -11,10 +11,10 @@ const HomePage = () => {
       <div className="row">
         <div className="col">
           <div className="row">
-            <input name="amount" />
+            <input name="amount" type="text" defaultValue="Amount" onFocus={(e) => (e.target.value = "")} onBlur={(e) => (e.target.placeholder = "Amount")} />
           </div>
           <div className="row">
-            <input name="duration" />
+            <input name="duration" type="text" defaultValue="Duration" onFocus={(e) => (e.target.value = "")} onBlur={(e) => (e.target.placeholder = "Duration")} />
           </div>
           <div className="row">
             <button onClick={handleClick}>Submit</button>
