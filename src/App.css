@@ -36,3 +36,16 @@
     transform: rotate(360deg);
   }
 }
+
+.two-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two equal columns */
+  gap: 20px; /* Space between columns */
+}
+
+.column {
+  border: 1px solid #ddd;
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
