@@ -17,6 +17,11 @@ const HomePage = () => {
   };
 
   const handleClick = () => {
+    if (isNaN(amountInput) || isNaN(durationInput)) {
+      alert("Both inputs must be numbers!");
+      return;
+    }
+
     alert("Amount: " + amountInput + ", Duration: " + durationInput);
   };
 
